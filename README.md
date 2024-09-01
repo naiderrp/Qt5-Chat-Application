@@ -1,5 +1,5 @@
 # Qt Chat Application based on TCP/IP protocol
-
+![](img/chat-app-demo.png)
 ### ServerManager
 
 ```ServerManager``` manages the chat server, handling new connections and routing messages between clients. Its primary role is to start the server and monitor incoming connections. When a client connects to the server, ```ServerManager``` creates a ```QTcpSocket``` object representing the connection and passes it to the ```MainWindow::newClientConnected()``` slot, where a corresponding ```ClientChatWidget``` interface element is created for each client. This class is also responsible for routing messages between clients, receiving messages from one client and distributing them to others. 
